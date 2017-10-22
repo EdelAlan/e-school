@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" >
+	<head>
+	    <title th:text="${'Student '+student.getId()}"></title>
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+	</head>
+	<body>
+		<br/>
+		<a class="btn btn-warning" href="/students">Go back to Students List</a>
+		<br/>
+		<br/>
+		<table class="table table-striped">
+		  <tbody>
+			    <tr>
+			    		<th scope="col">ID</th>
+			      	<td th:text="${student.getId()}"></td>
+			    </tr>
+			     <tr>
+			    		<th scope="col">Full Name</th>
+			      	<td th:text="${student.getFullName()}"></td>
+			    </tr>
+			     <tr>
+			    		<th scope="col">E-mail</th>
+			      	<td th:text="${student.getEmail()}"></td>
+			    </tr>
+		  </tbody>
+		</table>
+	</body>
+</html>

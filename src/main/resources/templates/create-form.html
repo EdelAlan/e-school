@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" >
+	<head>
+		<title>Create New Student</title>
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+	</head>
+	<body>
+		<br/>
+		<a class="btn btn-warning" href="/students">Go back to Students List</a>
+		<br/>
+		<br/>
+		<table class="table">
+		  <tbody>
+			    <tr>
+			    		<th scope="col">Full Name</th>
+			      	<td ><input class="form-control" id="fullName" placeholder="Full Name"/></td>
+			    </tr>
+			    <tr>
+			    		<th scope="col">E-mail</th>
+			      	<td><input class="form-control" id="email" placeholder="E-mail"/></td>
+			    </tr>
+			    <tr>
+			    		<th></th>
+			      	<td><button class="btn btn-success" id="createBtn">Create New Student</button></td>
+			    </tr>
+		  </tbody>
+		</table>
+		
+		<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	    <script th:src="@{/js/create-student.js}"></script>
+	</body>
+</html>
