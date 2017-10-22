@@ -28,6 +28,10 @@
 		    </th:block>
 		  </tbody>
 		</table>
+		<br/>
+		<form th:action="@{/logout}" method="post">
+            <input type="submit" value="Sign Out"/>
+        </form>
 		
 		<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 	    <script th:src="@{/js/delete-student.js}"></script>

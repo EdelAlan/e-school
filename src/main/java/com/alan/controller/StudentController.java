@@ -16,6 +16,16 @@ public class StudentController {
 		this.studentMapper = studentMapper;
 	}
 	
+	@GetMapping("/")
+    public String login1() {
+        return "index";
+    }
+	
+	@GetMapping("/login")
+    public String login() {
+        return "login";
+    }
+	
 	@GetMapping("/students")
 	public String getAllStudents(Model model) {
 		model.addAttribute("students", studentMapper.getAllStudents());
