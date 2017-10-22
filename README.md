@@ -6,7 +6,7 @@
   ```
 ## Открываем проект в Eclipse:
   ```
-  на Elipse ставим Spirng Boot
+  на Eclipse ставим Spirng Boot
   ```
 ## Настраиваем базу данных:
   ```
